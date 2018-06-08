@@ -132,18 +132,6 @@
     <Compile Include="Perfiles_Navegacion.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formulario_acercade.Designer.vb">
-      <DependentUpon>formulario_acercade.vb</DependentUpon>
-    </Compile>
-    <Compile Include="formulario_acercade.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fr_mostrar_usuario.Designer.vb">
-      <DependentUpon>fr_mostrar_usuario.vb</DependentUpon>
-    </Compile>
-    <Compile Include="fr_mostrar_usuario.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="LoginForm1.Designer.vb">
       <DependentUpon>LoginForm1.vb</DependentUpon>
     </Compile>
@@ -181,12 +169,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Perfiles_Navegacion.resx">
       <DependentUpon>Perfiles_Navegacion.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="formulario_acercade.resx">
-      <DependentUpon>formulario_acercade.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fr_mostrar_usuario.resx">
-      <DependentUpon>fr_mostrar_usuario.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm1.resx">
       <DependentUpon>LoginForm1.vb</DependentUpon>
