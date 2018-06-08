@@ -37,6 +37,7 @@ Partial Class Pruebaconexion
         Me.ArchivoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConfiguracionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConfigurarParametrosRBToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PerfilesHotspotToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CerrarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HerramientasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DebugToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -93,7 +94,6 @@ Partial Class Pruebaconexion
         Me.ID_USUARIO = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.bt_listar_vencidos = New System.Windows.Forms.Button()
-        Me.PerfilesHotspotToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.numero_tiempo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Grupo_tiempo.SuspendLayout()
@@ -147,6 +147,12 @@ Partial Class Pruebaconexion
         Me.ConfigurarParametrosRBToolStripMenuItem.Size = New System.Drawing.Size(227, 22)
         Me.ConfigurarParametrosRBToolStripMenuItem.Text = "Configurar Parámetros de RB"
         '
+        'PerfilesHotspotToolStripMenuItem
+        '
+        Me.PerfilesHotspotToolStripMenuItem.Name = "PerfilesHotspotToolStripMenuItem"
+        Me.PerfilesHotspotToolStripMenuItem.Size = New System.Drawing.Size(227, 22)
+        Me.PerfilesHotspotToolStripMenuItem.Text = "Perfiles Hotspot"
+        '
         'CerrarToolStripMenuItem
         '
         Me.CerrarToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.shutdown_22x22
@@ -165,7 +171,7 @@ Partial Class Pruebaconexion
         '
         Me.DebugToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem2, Me.ToolStripMenuItem1})
         Me.DebugToolStripMenuItem.Name = "DebugToolStripMenuItem"
-        Me.DebugToolStripMenuItem.Size = New System.Drawing.Size(109, 22)
+        Me.DebugToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.DebugToolStripMenuItem.Text = "Debug"
         '
         'ToolStripMenuItem2
@@ -698,12 +704,6 @@ Partial Class Pruebaconexion
         Me.bt_listar_vencidos.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.bt_listar_vencidos.UseVisualStyleBackColor = True
         Me.bt_listar_vencidos.Visible = False
-        '
-        'PerfilesHotspotToolStripMenuItem
-        '
-        Me.PerfilesHotspotToolStripMenuItem.Name = "PerfilesHotspotToolStripMenuItem"
-        Me.PerfilesHotspotToolStripMenuItem.Size = New System.Drawing.Size(227, 22)
-        Me.PerfilesHotspotToolStripMenuItem.Text = "Perfiles Hotspot"
         '
         'Pruebaconexion
         '

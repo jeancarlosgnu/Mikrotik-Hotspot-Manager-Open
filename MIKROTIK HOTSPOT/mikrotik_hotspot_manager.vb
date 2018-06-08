@@ -566,6 +566,11 @@ Public Class Pruebaconexion
     Private Sub lbl_hoy_es_Click(sender As Object, e As EventArgs) Handles lbl_hoy_es.Click
 
     End Sub
+
+    Private Sub PerfilesHotspotToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PerfilesHotspotToolStripMenuItem.Click
+        perfiles_navegacion.Show()
+
+    End Sub
 End Class
 
 
