@@ -1,5 +1,0 @@
-6 de Noviembre de 2014 - 
-1. Correccion de Tab en las Ventanas
-2. Control para que no Guarde si El usuario o contraseña de Acceso a la aplicacion estan en Blanco
-3. Se agrego el Textbox Verificar Contraseña y la rutina para comprobar que sean iguales
-4. Se agrego la Opcion mostrar contraseña, en caso de que se quiera verificar
