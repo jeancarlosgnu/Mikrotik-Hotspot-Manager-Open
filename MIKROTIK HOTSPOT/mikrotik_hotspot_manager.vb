@@ -184,29 +184,47 @@ Public Class Pruebaconexion
         parrila_usuarios.DataSource = DataSet1.Tables("Tabla_de_usuarios")
 
         lbl_fecha_hoy.Text = Format(Today, "dd/MMMM/yyyy")
+        Try
+
+
+            Dim mk = New mkAPI(iprouter)
+
+            If Not mk.Login(loginrouter, passrouter) Then
+                mk.Close()
+                Me.tb_result.Text = "Error"
+                Exit Sub
+            End If
+
+
+            mk.Send("/ip/hotspot/user/profile/print", True)
+            Me.tb_result.Text = ""
+            Dim fila As String
+            Dim vector_valores As String() = Nothing
+            If Me.combox_perfil.Items.Count = 0 Then
+
+
+                For Each row In mk.Read()
+
+                    Me.tb_result.Text = Me.tb_result.Text + row + vbCrLf
+                    If (row <> "!done") Then
+                        fila = row.Replace("!re=.", "")
+                        vector_valores = Split(fila, "=")
+
+                        Me.combox_perfil.Items.Add(vector_valores(Array.IndexOf(vector_valores, "name") + 1))
 
 
 
-        Dim mk = New mkAPI(iprouter)
+                    End If
 
-        If Not mk.Login(loginrouter, passrouter) Then
-            mk.Close()
+                Next
+                Me.combox_perfil.SelectedIndex = 0
+                Me.Enabled = True
+            End If
+        Catch ex As Exception
+            Mensaje_error_conex()
 
-            Exit Sub
-        End If
 
-        mk.Send("/ip/hotspot/user/profile/print", True)
-        Dim partido As String() = Nothing
-        If Me.combox_perfil.Items.Count = 0 Then
-            For Each row In mk.Read()
-                If (row <> "!done") Then
-                    partido = Split(row, "=")
-                    Me.combox_perfil.Items.Add(partido(4))
-                End If
-            Next
-            Me.combox_perfil.SelectedIndex = 0
-        End If
-        'Me.Enabled = True
+        End Try
     End Sub
 
 
@@ -527,10 +545,11 @@ Public Class Pruebaconexion
     End Sub
 
     Private Sub combox_perfil_Click(sender As Object, e As EventArgs) Handles combox_perfil.Click
-
+        cargar_perfiles_en_principal()
     End Sub
 
-    Private Sub combox_perfil_SelectedIndexChanged(sender As Object, e As EventArgs) Handles combox_perfil.SelectedIndexChanged
+    Private Sub combox_perfil_SelectedIndexChanged(sender As Object, e As EventArgs)
+
 
     End Sub
 
@@ -571,6 +590,8 @@ Public Class Pruebaconexion
         perfiles_navegacion.Show()
 
     End Sub
+
+
 End Class
 
 

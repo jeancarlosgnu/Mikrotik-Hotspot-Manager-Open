@@ -138,7 +138,7 @@ Partial Class Pruebaconexion
         '
         Me.ConfiguracionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ConfigurarParametrosRBToolStripMenuItem, Me.PerfilesHotspotToolStripMenuItem})
         Me.ConfiguracionToolStripMenuItem.Name = "ConfiguracionToolStripMenuItem"
-        Me.ConfiguracionToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ConfiguracionToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
         Me.ConfiguracionToolStripMenuItem.Text = "Configuración"
         '
         'ConfigurarParametrosRBToolStripMenuItem
@@ -157,7 +157,7 @@ Partial Class Pruebaconexion
         '
         Me.CerrarToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.shutdown_22x22
         Me.CerrarToolStripMenuItem.Name = "CerrarToolStripMenuItem"
-        Me.CerrarToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CerrarToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
         Me.CerrarToolStripMenuItem.Text = "Cerrar"
         '
         'HerramientasToolStripMenuItem
@@ -171,7 +171,7 @@ Partial Class Pruebaconexion
         '
         Me.DebugToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem2, Me.ToolStripMenuItem1})
         Me.DebugToolStripMenuItem.Name = "DebugToolStripMenuItem"
-        Me.DebugToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.DebugToolStripMenuItem.Size = New System.Drawing.Size(109, 22)
         Me.DebugToolStripMenuItem.Text = "Debug"
         '
         'ToolStripMenuItem2

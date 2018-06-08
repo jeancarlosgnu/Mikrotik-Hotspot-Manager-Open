@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Hotspot Mikrotik Manager Open.exe" size="184832">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Hotspot Mikrotik Manager Open.exe" size="184320">
       <assemblyIdentity name="Hotspot Mikrotik Manager Open" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>BQ0onAVebh5UkjbazJAC3vt8vZLwxcwtY7FecDn6NKQ=</dsig:DigestValue>
+        <dsig:DigestValue>OxjH1EmcAyCVwlE+/0bJInzW4wxjgfynfFEKINvChYU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

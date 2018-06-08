@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MIKROTIK HOTSPOT", "MIKROTIK HOTSPOT\MIKROTIK HOTSPOT.vbproj", "{EC7A88E4-D5BB-4318-BE5E-8B6484A26AF9}"
 EndProject
 Global
@@ -16,5 +18,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F5CA5F5-29F2-473B-9F81-2994C98BFE7D}
 	EndGlobalSection
 EndGlobal

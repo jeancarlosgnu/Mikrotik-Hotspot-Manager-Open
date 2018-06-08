@@ -8,7 +8,13 @@ Module procedimientos
     Public loginrouter = System.Configuration.ConfigurationManager.AppSettings("userapi")
     Public passrouter = System.Configuration.ConfigurationManager.AppSettings("passwapi")
 
-
+    Sub Mensaje_error_conex()
+        MessageBox.Show("Problema al conectar a Routerboard  : " + System.Configuration.ConfigurationManager.AppSettings("iprb") + "  Verifique que se encuentre activa la API en su MIKROTIK.",
+            "Error de Conexión con Mikrotik",
+            MessageBoxButtons.OK,
+            MessageBoxIcon.Exclamation,
+            MessageBoxDefaultButton.Button1)
+    End Sub
     Sub Listar_vencidos()
         Dim DS As DataSet = Pruebaconexion.DataSet1
         Dim tabla As DataTable = Pruebaconexion.DataSet1.Tables("Tabla_de_usuarios")
@@ -543,7 +549,97 @@ Optional ByVal Mode As Boolean = False) As String
         Next
         Pruebaconexion.Enabled = True
     End Sub
+    Sub cargar_perfiles_en_configuracion()
+        perfiles_navegacion.parrila_perfiles.Rows.Clear()
 
+        Try
+
+
+            Dim mk = New mkAPI(iprouter)
+
+            If Not mk.Login(loginrouter, passrouter) Then
+                mk.Close()
+                Pruebaconexion.tb_result.Text = "Error"
+                Pruebaconexion.Enabled = True
+                Exit Sub
+            End If
+
+
+            mk.Send("/ip/hotspot/user/profile/print", True)
+            Pruebaconexion.tb_result.Text = ""
+            Dim fila As String
+            Dim vector_valores As String() = Nothing
+            For Each row In mk.Read()
+
+                Pruebaconexion.tb_result.Text = Pruebaconexion.tb_result.Text + row + vbCrLf
+                If (row <> "!done") Then
+                    fila = row.Replace("!re=.", "")
+                    vector_valores = Split(fila, "=")
+                    'MsgBox(comentario)
+
+                    perfiles_navegacion.parrila_perfiles.Rows.Add(vector_valores(Array.IndexOf(vector_valores, "id") + 1), vector_valores(Array.IndexOf(vector_valores, "name") + 1), vector_valores(Array.IndexOf(vector_valores, "rate-limit") + 1))
+
+
+                End If
+
+            Next
+
+            Pruebaconexion.Enabled = True
+        Catch ex As Exception
+            Mensaje_error_conex()
+
+
+        End Try
+
+    End Sub
+    Sub cargar_perfiles_en_principal()
+
+
+        If Pruebaconexion.combox_perfil.Items.Count > 0 Then
+            Pruebaconexion.combox_perfil.Items.Clear()
+        End If
+
+
+        Try
+
+
+            Dim mk = New mkAPI(iprouter)
+
+            If Not mk.Login(loginrouter, passrouter) Then
+                mk.Close()
+                Pruebaconexion.tb_result.Text = "Error"
+                Pruebaconexion.Enabled = True
+                Exit Sub
+            End If
+
+
+            mk.Send("/ip/hotspot/user/profile/print", True)
+            Pruebaconexion.tb_result.Text = ""
+            Dim fila As String
+            Dim vector_valores As String() = Nothing
+            For Each row In mk.Read()
+
+                Pruebaconexion.tb_result.Text = Pruebaconexion.tb_result.Text + row + vbCrLf
+                If (row <> "!done") Then
+                    fila = row.Replace("!re=.", "")
+                    vector_valores = Split(fila, "=")
+
+                    Pruebaconexion.combox_perfil.Items.Add(vector_valores(Array.IndexOf(vector_valores, "name") + 1))
+
+
+
+                End If
+
+            Next
+
+            Pruebaconexion.combox_perfil.SelectedIndex = 0
+        Catch ex As Exception
+            Mensaje_error_conex()
+
+
+        End Try
+
+    End Sub
     Public Function Compare(
     t1 As Date,
     t2 As Date
