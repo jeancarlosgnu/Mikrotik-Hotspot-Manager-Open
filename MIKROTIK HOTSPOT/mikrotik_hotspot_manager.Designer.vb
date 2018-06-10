@@ -94,6 +94,7 @@ Partial Class Pruebaconexion
         Me.ID_USUARIO = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.bt_listar_vencidos = New System.Windows.Forms.Button()
+        Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.numero_tiempo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Grupo_tiempo.SuspendLayout()
@@ -155,14 +156,14 @@ Partial Class Pruebaconexion
         '
         'CerrarToolStripMenuItem
         '
-        Me.CerrarToolStripMenuItem.Image = Global.WindowsApplication1.My.Resources.Resources.shutdown_22x22
+        Me.CerrarToolStripMenuItem.Image = Global.HotspotMikrotikManager.My.Resources.Resources.shutdown_22x22
         Me.CerrarToolStripMenuItem.Name = "CerrarToolStripMenuItem"
         Me.CerrarToolStripMenuItem.Size = New System.Drawing.Size(150, 22)
         Me.CerrarToolStripMenuItem.Text = "Cerrar"
         '
         'HerramientasToolStripMenuItem
         '
-        Me.HerramientasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DebugToolStripMenuItem})
+        Me.HerramientasToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DebugToolStripMenuItem, Me.AyudaToolStripMenuItem})
         Me.HerramientasToolStripMenuItem.Name = "HerramientasToolStripMenuItem"
         Me.HerramientasToolStripMenuItem.Size = New System.Drawing.Size(90, 20)
         Me.HerramientasToolStripMenuItem.Text = "Herramientas"
@@ -171,19 +172,19 @@ Partial Class Pruebaconexion
         '
         Me.DebugToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem2, Me.ToolStripMenuItem1})
         Me.DebugToolStripMenuItem.Name = "DebugToolStripMenuItem"
-        Me.DebugToolStripMenuItem.Size = New System.Drawing.Size(109, 22)
+        Me.DebugToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.DebugToolStripMenuItem.Text = "Debug"
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(153, 22)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
         Me.ToolStripMenuItem2.Text = "Mostrar Debug"
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(153, 22)
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.ToolStripMenuItem1.Text = "Ocultar Debug"
         '
         'txt_usuariocliente
@@ -278,7 +279,7 @@ Partial Class Pruebaconexion
         'bt_generar_clave
         '
         Me.bt_generar_clave.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bt_generar_clave.Image = Global.WindowsApplication1.My.Resources.Resources.random
+        Me.bt_generar_clave.Image = Global.HotspotMikrotikManager.My.Resources.Resources.random
         Me.bt_generar_clave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.bt_generar_clave.Location = New System.Drawing.Point(8, 55)
         Me.bt_generar_clave.Name = "bt_generar_clave"
@@ -410,7 +411,7 @@ Partial Class Pruebaconexion
         'bt_reset
         '
         Me.bt_reset.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bt_reset.Image = Global.WindowsApplication1.My.Resources.Resources.reset
+        Me.bt_reset.Image = Global.HotspotMikrotikManager.My.Resources.Resources.reset
         Me.bt_reset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.bt_reset.Location = New System.Drawing.Point(467, 420)
         Me.bt_reset.Name = "bt_reset"
@@ -423,7 +424,7 @@ Partial Class Pruebaconexion
         'bt_crear_usuario
         '
         Me.bt_crear_usuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bt_crear_usuario.Image = Global.WindowsApplication1.My.Resources.Resources.user_add2_22x22
+        Me.bt_crear_usuario.Image = Global.HotspotMikrotikManager.My.Resources.Resources.user_add2_22x22
         Me.bt_crear_usuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.bt_crear_usuario.Location = New System.Drawing.Point(11, 257)
         Me.bt_crear_usuario.Name = "bt_crear_usuario"
@@ -436,7 +437,7 @@ Partial Class Pruebaconexion
         'bt_Eliminar
         '
         Me.bt_Eliminar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bt_Eliminar.Image = Global.WindowsApplication1.My.Resources.Resources.delete_user2_22x22
+        Me.bt_Eliminar.Image = Global.HotspotMikrotikManager.My.Resources.Resources.delete_user2_22x22
         Me.bt_Eliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.bt_Eliminar.Location = New System.Drawing.Point(556, 420)
         Me.bt_Eliminar.Name = "bt_Eliminar"
@@ -449,7 +450,7 @@ Partial Class Pruebaconexion
         'bt_select_all
         '
         Me.bt_select_all.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bt_select_all.Image = Global.WindowsApplication1.My.Resources.Resources.lista
+        Me.bt_select_all.Image = Global.HotspotMikrotikManager.My.Resources.Resources.lista
         Me.bt_select_all.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.bt_select_all.Location = New System.Drawing.Point(642, 420)
         Me.bt_select_all.Name = "bt_select_all"
@@ -464,7 +465,7 @@ Partial Class Pruebaconexion
         Me.btb_pdf.AccessibleDescription = "  asdasd"
         Me.btb_pdf.AutoEllipsis = True
         Me.btb_pdf.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btb_pdf.Image = Global.WindowsApplication1.My.Resources.Resources.pdf
+        Me.btb_pdf.Image = Global.HotspotMikrotikManager.My.Resources.Resources.pdf
         Me.btb_pdf.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btb_pdf.Location = New System.Drawing.Point(234, 420)
         Me.btb_pdf.Name = "btb_pdf"
@@ -477,7 +478,7 @@ Partial Class Pruebaconexion
         'bt_shutdown
         '
         Me.bt_shutdown.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bt_shutdown.Image = Global.WindowsApplication1.My.Resources.Resources.shutdown_22x22
+        Me.bt_shutdown.Image = Global.HotspotMikrotikManager.My.Resources.Resources.shutdown_22x22
         Me.bt_shutdown.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.bt_shutdown.Location = New System.Drawing.Point(5, 420)
         Me.bt_shutdown.Name = "bt_shutdown"
@@ -490,7 +491,7 @@ Partial Class Pruebaconexion
         'bt_listar_usuarios
         '
         Me.bt_listar_usuarios.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bt_listar_usuarios.Image = Global.WindowsApplication1.My.Resources.Resources.lista
+        Me.bt_listar_usuarios.Image = Global.HotspotMikrotikManager.My.Resources.Resources.lista
         Me.bt_listar_usuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.bt_listar_usuarios.Location = New System.Drawing.Point(375, 420)
         Me.bt_listar_usuarios.Name = "bt_listar_usuarios"
@@ -694,7 +695,7 @@ Partial Class Pruebaconexion
         'bt_listar_vencidos
         '
         Me.bt_listar_vencidos.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bt_listar_vencidos.Image = Global.WindowsApplication1.My.Resources.Resources.time_expired
+        Me.bt_listar_vencidos.Image = Global.HotspotMikrotikManager.My.Resources.Resources.time_expired
         Me.bt_listar_vencidos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.bt_listar_vencidos.Location = New System.Drawing.Point(9, 368)
         Me.bt_listar_vencidos.Name = "bt_listar_vencidos"
@@ -704,6 +705,12 @@ Partial Class Pruebaconexion
         Me.bt_listar_vencidos.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.bt_listar_vencidos.UseVisualStyleBackColor = True
         Me.bt_listar_vencidos.Visible = False
+        '
+        'AyudaToolStripMenuItem
+        '
+        Me.AyudaToolStripMenuItem.Name = "AyudaToolStripMenuItem"
+        Me.AyudaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.AyudaToolStripMenuItem.Text = "Ayuda"
         '
         'Pruebaconexion
         '
@@ -825,4 +832,5 @@ Partial Class Pruebaconexion
     Friend WithEvents Timer1 As Timer
     Friend WithEvents bt_listar_vencidos As Button
     Friend WithEvents PerfilesHotspotToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AyudaToolStripMenuItem As ToolStripMenuItem
 End Class

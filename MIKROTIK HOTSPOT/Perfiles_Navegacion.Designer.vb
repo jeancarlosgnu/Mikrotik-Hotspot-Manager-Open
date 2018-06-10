@@ -80,7 +80,7 @@ Partial Class perfiles_navegacion
         'bt_listar_perfiles
         '
         Me.bt_listar_perfiles.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bt_listar_perfiles.Image = Global.WindowsApplication1.My.Resources.Resources.lista
+        Me.bt_listar_perfiles.Image = Global.HotspotMikrotikManager.My.Resources.Resources.lista
         Me.bt_listar_perfiles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.bt_listar_perfiles.Location = New System.Drawing.Point(0, 25)
         Me.bt_listar_perfiles.Name = "bt_listar_perfiles"

@@ -6,73 +6,73 @@ Hotspot Mikrotik Manager Open
 </name>
 </assembly>
 <members>
-<member name="T:WindowsApplication1.My.Resources.Resources">
+<member name="T:HotspotMikrotikManager.My.Resources.Resources">
 <summary>
   Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
 </summary>
 </member>
-<member name="P:WindowsApplication1.My.Resources.Resources.ResourceManager">
+<member name="P:HotspotMikrotikManager.My.Resources.Resources.ResourceManager">
 <summary>
   Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
 </summary>
 </member>
-<member name="P:WindowsApplication1.My.Resources.Resources.Culture">
+<member name="P:HotspotMikrotikManager.My.Resources.Resources.Culture">
 <summary>
   Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
-<member name="P:WindowsApplication1.My.Resources.Resources.delete_user2_22x22">
+<member name="P:HotspotMikrotikManager.My.Resources.Resources.delete_user2_22x22">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:WindowsApplication1.My.Resources.Resources.facebook_icon">
+<member name="P:HotspotMikrotikManager.My.Resources.Resources.facebook_icon">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:WindowsApplication1.My.Resources.Resources.lista">
+<member name="P:HotspotMikrotikManager.My.Resources.Resources.lista">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:WindowsApplication1.My.Resources.Resources.MIKROTIK_LOW">
+<member name="P:HotspotMikrotikManager.My.Resources.Resources.MIKROTIK_LOW">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:WindowsApplication1.My.Resources.Resources.pdf">
+<member name="P:HotspotMikrotikManager.My.Resources.Resources.pdf">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:WindowsApplication1.My.Resources.Resources.premium_logo_low">
+<member name="P:HotspotMikrotikManager.My.Resources.Resources.premium_logo_low">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:WindowsApplication1.My.Resources.Resources.random">
+<member name="P:HotspotMikrotikManager.My.Resources.Resources.random">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:WindowsApplication1.My.Resources.Resources.reset">
+<member name="P:HotspotMikrotikManager.My.Resources.Resources.reset">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:WindowsApplication1.My.Resources.Resources.shutdown_22x22">
+<member name="P:HotspotMikrotikManager.My.Resources.Resources.shutdown_22x22">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:WindowsApplication1.My.Resources.Resources.time_expired">
+<member name="P:HotspotMikrotikManager.My.Resources.Resources.time_expired">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:WindowsApplication1.My.Resources.Resources.user_add2_22x22">
+<member name="P:HotspotMikrotikManager.My.Resources.Resources.user_add2_22x22">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>

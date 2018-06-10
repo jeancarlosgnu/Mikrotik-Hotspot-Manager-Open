@@ -182,7 +182,7 @@ Public Class Pruebaconexion
 
     Private Sub Pruebaconexion_Load(sender As Object, e As EventArgs) Handles MyBase.Load, DataSet1.Initialized
         parrila_usuarios.DataSource = DataSet1.Tables("Tabla_de_usuarios")
-
+        Me.Text = "Hotspot Mikrotik Manager - IP Routerboard : " + System.Configuration.ConfigurationManager.AppSettings("iprb")
         lbl_fecha_hoy.Text = Format(Today, "dd/MMMM/yyyy")
         Try
 
@@ -387,18 +387,6 @@ Public Class Pruebaconexion
         End If
     End Sub
 
-
-    Private Sub parrila_usuarios_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs)
-        fr_mostrar_usuario.Hide()
-
-        fr_mostrar_usuario.Show()
-        fr_mostrar_usuario.lb_usuario_mostrar.Text = Me.parrila_usuarios.CurrentRow.Cells(1).Value
-        fr_mostrar_usuario.lb_password_mostrar.Text = Me.parrila_usuarios.CurrentRow.Cells(1).Value
-        'MsgBox(Me.parrila_usuarios.CurrentRow.Cells(1).Value)
-
-    End Sub
-
-
     Private Sub bt_shutdown_Click(sender As Object, e As EventArgs) Handles bt_shutdown.Click, CerrarToolStripMenuItem.Click
         Me.Close()
     End Sub
@@ -429,9 +417,6 @@ Public Class Pruebaconexion
 
     End Sub
 
-    Private Sub AcercaDeToolStripMenuItem_Click(sender As Object, e As EventArgs)
-        formulario_acercade.Show()
-    End Sub
 
     Private Sub DeseleccionarTodosToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Me.parrila_usuarios.ClearSelection()
@@ -579,6 +564,7 @@ Public Class Pruebaconexion
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Me.lbl_fecha_hoy.Text = Format(Today, "dd/MMMM/yyyy")
+        Me.Text = "Hotspot Mikrotik Manager" + System.Configuration.ConfigurationManager.AppSettings("iprb")
 
     End Sub
 
@@ -591,7 +577,15 @@ Public Class Pruebaconexion
 
     End Sub
 
+    Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs)
 
+    End Sub
+
+
+
+    Private Sub AyudaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AyudaToolStripMenuItem.Click
+        AboutBox1.Show()
+    End Sub
 End Class
 
 
