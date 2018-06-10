@@ -564,7 +564,7 @@ Public Class Pruebaconexion
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Me.lbl_fecha_hoy.Text = Format(Today, "dd/MMMM/yyyy")
-        Me.Text = "Hotspot Mikrotik Manager" + System.Configuration.ConfigurationManager.AppSettings("iprb")
+        Me.Text = "Hotspot Mikrotik Manager - IP Routerboard : " + System.Configuration.ConfigurationManager.AppSettings("iprb")
 
     End Sub
 
